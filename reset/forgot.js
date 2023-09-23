@@ -3,6 +3,8 @@ $(document).ready(function() {
         e.preventDefault();
         const email = $("#form3_email").val();
 
+        aeLoading();
+
         $.ajax({
             type: "post",
             cache: false,
@@ -11,7 +13,8 @@ $(document).ready(function() {
             dataType: "text",
             success: function (data, status) {
                 alert(data)
-                if (data.success) {
+                aeLoading();
+                if (data=="1") {
                     showToast("aeToastS", "Success", "Email sent successfully.", "20");
                 } else {
                     showToast("aeToastE", "Error", data.error, "20");
@@ -20,6 +23,7 @@ $(document).ready(function() {
             error: function (xhr, status, error) {
                 showToast("aeToastE", "Error", "An error occurred.", "20");
                 console.error(error);
+                aeLoading();
             }
         });
     });
