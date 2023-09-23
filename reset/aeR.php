@@ -2,7 +2,7 @@
   <div class="row justify-content-center align-items-center">
     <div class="col-12 col-sm-10 col-md-8 col-lg-6">
     <form class="custom-form justify-content-center align-items-center" id="form1">
-  <span class="reset-text">AAMUSTED IRB PASSWORD RESET</span>
+  <span class="reset-text">THE DRESSING PASSWORD RESET</span>
 
   <div class="mb-3 justify-content-center align-items-center">
     <div class="input-group">

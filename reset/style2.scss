@@ -1,11 +1,27 @@
-// Extra small devices (portrait phones, less than 576px)
 
-$bg-color: #8C003B;
-$hover-color: #FFC712;
-$text-color: white;
-$dropdown-bg:#DD9933;
 
-$heading-color:#FFC712;
+// Variables
+$html-bg-color: #843971;
+$body-bg-color: #843971;
+$card-bg-color: lighten($html-bg-color, 10%);
+$btn-color: darken($html-bg-color, 15%);
+$input-focus-border-color: darken($html-bg-color, 20%);
+$hover-color: lighten($html-bg-color, 20%);
+
+$link-color:#f2f2f2;
+
+$hover-color:#E8D28A;
+
+
+
+
+// Basic Style
+html, body {
+  height: 100%;
+  background: linear-gradient(45deg, $html-bg-color, $body-bg-color);
+  font-family: 'Arial', sans-serif;
+}
+
 
 @media (max-width: 575.98px) { 
     // styles

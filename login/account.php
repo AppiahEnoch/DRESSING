@@ -8,27 +8,27 @@
                     <form id="form2" action="#" method="post">
                         <!-- Username Input -->
                         <div class="mb-3">
-                            <label for="username" class="form-label">Username</label>
-                            <input type="text" class="form-control" id="username" name="username" required>
+                            <label for="form2_username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="form2_username" name="form2_username" required>
                         </div>
                         
                         <!-- Email Input -->
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
+                            <label for="form2_email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="form2_email" name="form2_email" required>
                         </div>
                         
                         <!-- Password Input -->
                         <div class="mb-3 position-relative">
-                            <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" name="password" required>
+                            <label for="form2_account_password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="form2_account_password" name="form2_account_password" required>
                             <i class="fas fa-eye-slash toggle-icon"></i>
                         </div>
                         
                         <!-- Confirm Password Input -->
                         <div class="mb-3 position-relative">
-                            <label for="confirmPassword" class="form-label">Confirm Password</label>
-                            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+                            <label for="form2_confirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="form2_confirmPassword" name="form2_confirmPassword" required>
                             <i class="fas fa-eye-slash toggle-icon"></i>
                         </div>
                         

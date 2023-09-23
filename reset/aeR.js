@@ -20,15 +20,7 @@ function reset() {
   var confirmPassword = $("#confirmPassword").val();
  
 
-  if (!validatePassword(password)) {
-    var m =
-      "Password must be at least 8 characters long " +
-      " and contains at least one lowercase letter, one " +
-      "uppercase letter, one number, and one special character";
-    showToast("aeToastE", "PASSWORD NOT ACCEPTED", m, "20");
-
-    return;
-  }
+  
 
   if (!passwordConfirm(password, confirmPassword)) {
     showToast(
@@ -53,6 +45,7 @@ function reset() {
     url: "reset.php", // Path to your PHP file
     dataType: "text",
     success: function (data, status) {
+      alert(data)
 
       showToastYN("aeToastYN", "SUCCESS!","YOUR USERNAME AND PASSWORD RESET IS SUCCESSFUL !", "20");
      

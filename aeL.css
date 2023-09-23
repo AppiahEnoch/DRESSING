@@ -1,0 +1,16 @@
+img.img-fluid {
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 100%;
+}
+img.img-fluid:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+@media (min-width: 992px) {
+  img.img-fluid {
+    max-width: 10%;
+  }
+}/*# sourceMappingURL=aeL.css.map */

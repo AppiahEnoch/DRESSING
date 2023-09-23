@@ -1,4 +1,11 @@
+html, body {
+  height: 100%;
+  background: linear-gradient(45deg, #843971, #843971);
+  font-family: "Arial", sans-serif;
+}
+
 .custom-form {
+  background-color: #A8488F;
   max-width: 20rem;
   border: 1px solid #ddd;
   padding: 1rem;
@@ -24,7 +31,7 @@ select:focus {
 }
 
 .reset-text {
-  color: #8C003B; /* Text color */
+  color: rgb(255, 2, 2); /* Text color */
   text-shadow: 1px 1px 0 #999, -1px -1px 0 #999, 1px -1px 0 #999, -1px 1px 0 #999, 2px 2px 3px rgba(0, 0, 0, 0.2); /* Shadow for 3D effect */
   font-weight: bold;
 }/*# sourceMappingURL=aeR.css.map */

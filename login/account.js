@@ -7,42 +7,37 @@ $(document).ready(function () {
   
 
 
-
-
-
-function registerUser() {
-    const username = $("#username").val();
-    const email = $("#email").val();
-    const password = $("#password").val();
-    const confirmPassword = $("#confirmPassword").val();
+  function registerUser() {
+    const username = $("#form2_username").val();
+    const email = $("#form2_email").val();
+    const password = $("#form2_account_password").val();
+    const confirmPassword = $("#form2_confirmPassword").val();
   
     if (password !== confirmPassword) {
-      showToast("aeToastE", "Password Mismatch", "Passwords do not match.", "20");
+      showToastR("aeToastR", "Password Mismatch", "Passwords do not match.", "20");
       return;
     }
   
     $.ajax({
       type: "post",
       cache: false,
-      url: "registerUser.php",
+      url: "account_insert.php",
       data: { username: username, email: email, password: password },
       dataType: "json",
       success: function (data, status) {
         if (data.success) {
-          showToast("aeToastS", "Success", "User successfully registered.", "20");
+            showWrapper4(['wrapper5'], 'wrapper', 5);
+
+      
+        } else if (data.error) {
+          showToast("aeToastE", data.error, data.error, "20");
         }
       },
       error: function (xhr, status, error) {
-        const response = JSON.parse(xhr.responseText);
-        if (response.error === 'Username already taken') {
-          showToast("aeToastE", "Error", "Username already taken.", "20");
-        } else if (response.error === 'Email already taken') {
-          showToast("aeToastE", "Error", "Email already taken.", "20");
-        } else {
-          showToast("aeToastE", "Error", "Failed to register user.", "20");
-        }
         console.error(error);
+        showToast("aeToastE", "Error", "Failed to register user.", "20");
       },
     });
   }
+  
   

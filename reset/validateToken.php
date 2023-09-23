@@ -7,8 +7,6 @@ include "../config/settings.php";
 
 if (isset($_GET['token'])) {
     $token = $_GET['token'];
-
-
     $sql = "SELECT email FROM password_reset_tokens WHERE token=? AND expiry > DATE_SUB(NOW(), INTERVAL 7 DAY)";
 
     $stmt = $conn->prepare($sql);

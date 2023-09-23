@@ -1,7 +1,5 @@
 
 
-
-
 document.addEventListener('DOMContentLoaded', () => {
     // Select all toggle icons
     const toggleIcons = document.querySelectorAll('.toggle-icon');

@@ -1,0 +1,48 @@
+#wrapper5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #843971;
+}
+#wrapper5 #inner-wrapper {
+  max-width: 400px;
+  width: 100%;
+}
+#wrapper5 #inner-wrapper .card {
+  background-color: #a8488f;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#wrapper5 #inner-wrapper .card .card-body {
+  text-align: center;
+  color: #f2f2f2;
+}
+#wrapper5 #inner-wrapper .card .card-body .logo-sm {
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+}
+#wrapper5 #inner-wrapper .card .card-body .card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+#wrapper5 #inner-wrapper .card .card-body .card-text {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+#wrapper5 #inner-wrapper .card .card-body .btn.btn-primary {
+  background-color: #4f2243;
+  border: none;
+}
+#wrapper5 #inner-wrapper .card .card-body .btn.btn-primary a {
+  color: #f2f2f2;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+#wrapper5 #inner-wrapper .card .card-body .btn.btn-primary a i {
+  margin-left: 8px;
+}
+#wrapper5 #inner-wrapper .card .card-body .btn.btn-primary a:hover {
+  color: #E8D28A;
+}/*# sourceMappingURL=aeS.css.map */

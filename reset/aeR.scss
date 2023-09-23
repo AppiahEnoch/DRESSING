@@ -1,4 +1,28 @@
+
+
+
+// Variables
+$html-bg-color: #843971;
+$body-bg-color: #843971;
+$card-bg-color: lighten($html-bg-color, 10%);
+$btn-color: darken($html-bg-color, 15%);
+$input-focus-border-color: darken($html-bg-color, 20%);
+$hover-color: lighten($html-bg-color, 20%);
+
+$link-color:#f2f2f2;
+
+$hover-color:#E8D28A;
+
+// Basic Style
+html, body {
+  height: 100%;
+  background: linear-gradient(45deg, $html-bg-color, $body-bg-color);
+  font-family: 'Arial', sans-serif;
+}
+
+
 .custom-form {
+  background-color: #A8488F;
     max-width: 20rem;
     border: 1px solid #ddd;
     padding: 1rem;
@@ -18,6 +42,7 @@
   input[type="file"],
   textarea,
   select {
+    
     &:hover, &:focus {
   
       outline: none !important;
@@ -30,7 +55,7 @@
 
 
   .reset-text{
-    color: #8C003B; /* Text color */
+    color: rgb(255, 2, 2); /* Text color */
     text-shadow: 1px 1px 0 #999,
                  -1px -1px 0 #999, 
                  1px -1px 0 #999,

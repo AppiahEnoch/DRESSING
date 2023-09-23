@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./colors.css?<?php echo filemtime("colors.css"); ?>" />
     <link rel="stylesheet" href="../aeT.css?<?php echo filemtime("../aeT.css"); ?>" />
     <link rel="stylesheet" href="../aeM.css?<?php echo filemtime("../aeM.css"); ?>" />
+    <link rel="stylesheet" href="../aeS.css?<?php echo filemtime("../aeS.css"); ?>" />
   </head>
   <body>
 
@@ -32,6 +33,7 @@
   include "./login.php";
   include "./account.php";
   include "./forgot.php";
+  include "../aeS.php";
   include "../aeM.php";
   include "../aeT.php";
   ?>
@@ -55,6 +57,8 @@
     <script src="../ae.js?version=<?php echo filemtime('../ae.js'); ?>"></script>
     <script src="page.js?version=<?php echo filemtime('page.js'); ?>"></script>
     <script src="account.js?version=<?php echo filemtime('account.js'); ?>"></script>
+    <script src="login.js?version=<?php echo filemtime('login.js'); ?>"></script>
+    <script src="forgot.js?version=<?php echo filemtime('forgot.js'); ?>"></script>
     
     
   </body>
