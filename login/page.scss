@@ -1,0 +1,48 @@
+
+.mb-3.position-relative {
+    .toggle-icon {
+        position: absolute;
+        top: 50%; // Center the icon vertically
+        right: 10px; // Position it a bit from the right edge
+        transform: translateY(50%); // Ensure the centering is accurate
+        cursor: pointer; // Indicate it's clickable
+        font-size: 1rem; // Adjust the size if necessary
+    }
+    .form-control {
+        padding-right: 30px; // Add some padding to avoid the text going under the icon
+    }
+}
+
+input[type],
+input[type="file"],
+textarea,
+select {
+  &:hover, &:focus {
+
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+
+img.img-fluid {
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05); // Slightly scale the image on hover
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    // Default (Mobile-first approach)
+    max-width: 100%;
+
+    // Large screens
+    @media (min-width: 992px) { // This breakpoint is for large devices like laptops and desktops (based on Bootstrap's breakpoints)
+        max-width: 10%;
+    }
+}
+
+

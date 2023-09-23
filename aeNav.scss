@@ -1,0 +1,69 @@
+// Define color variables
+$header-bg-color: #843971;
+$nav-link-color: #fcb900;
+$nav-link-hover-color: wheat;
+$logo-bg-color: #843971;
+$navbar-bg-color: #843971;
+$body-bg-color: #843971;
+$dropdown-bg-color: #843971;
+$dropdown-link-color: #E8D28A;
+$dropdown-hover-bg-color: #0F5132;
+
+// SCSS for the new Navbar
+.navbar {
+  background-color: $navbar-bg-color;
+
+  .navbar-toggler {
+    z-index: 2;
+  }
+
+  .navbar-brand {
+    img {
+      background-color: $logo-bg-color;
+    }
+  }
+
+  .container-fluid {
+    background-color: $header-bg-color;
+   
+
+    a {
+      color: $nav-link-color;
+    }
+  }
+
+  .navbar-nav {
+ 
+
+    .nav-item {
+
+       
+      a {
+        color: $nav-link-color;
+        
+        &:hover {
+          color: $nav-link-hover-color;
+        }
+      }
+    }
+  }
+
+  .search-box {
+    display: none;
+  }
+
+  @media (max-width: 575.98px) {
+    .navbar-nav {
+       
+
+      text-align: center;
+      
+    }
+
+    .search-box {
+      display: block;
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+  }
+}

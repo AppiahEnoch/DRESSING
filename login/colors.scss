@@ -1,0 +1,91 @@
+
+
+// Variables
+$html-bg-color: #843971;
+$body-bg-color: #843971;
+$card-bg-color: lighten($html-bg-color, 10%);
+$btn-color: darken($html-bg-color, 15%);
+$input-focus-border-color: darken($html-bg-color, 20%);
+$hover-color: lighten($html-bg-color, 20%);
+
+$link-color:#f2f2f2;
+
+$hover-color:#E8D28A;
+
+// Basic Style
+html, body {
+  height: 100%;
+  background: linear-gradient(45deg, $html-bg-color, $body-bg-color);
+  font-family: 'Arial', sans-serif;
+}
+
+
+
+.card {
+  background-color: $card-bg-color;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+  .card-title {
+    color: white;
+    border-bottom: 2px solid $btn-color;
+    padding-bottom: 10px;
+  }
+
+  .form-control {
+    background-color: lighten($card-bg-color, 5%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:focus {
+      box-shadow: none;
+      border-color: $input-focus-border-color;
+    }
+  }
+
+  .form-label {
+    color: white;
+  }
+
+  .btn-primary {
+    background-color: $btn-color;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    
+    &:hover {
+      background-color: darken($btn-color, 5%);
+    }
+  }
+
+  a {
+    color: $link-color;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $hover-color;
+      text-decoration: underline;
+    }
+  }
+
+  .toggle-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+
+    &:hover {
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+}
+
+
