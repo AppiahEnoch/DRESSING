@@ -1,0 +1,69 @@
+#addProduct .custom-form {
+  max-width: 30rem;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: auto;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 0.5rem;
+  color: #ddd;
+}
+@media (max-width: 576px) {
+  #addProduct .custom-form {
+    width: calc(100% - 2rem);
+  }
+}
+#addProduct input[type]:hover, #addProduct input[type]:focus,
+#addProduct input[type=file]:hover,
+#addProduct input[type=file]:focus,
+#addProduct textarea:hover,
+#addProduct textarea:focus,
+#addProduct select:hover,
+#addProduct select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+#addProduct #imageGrid .col-3 {
+  position: relative;
+}
+#addProduct #imageGrid .col-3 .close-icon {
+  top: 5px;
+  right: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.3s ease;
+}
+#addProduct #imageGrid .col-3 .close-icon:hover {
+  transform: scale(1.2);
+}
+#addProduct #imageGrid .col-3 img {
+  max-width: 100%;
+  height: auto;
+}
+
+#price .custom-form {
+  max-width: 20rem;
+}
+
+#categoryTable {
+  border-collapse: collapse;
+  border: none;
+}
+#categoryTable th, #categoryTable td {
+  border: none;
+}
+#categoryTable td {
+  color: #f2f2f2;
+}
+#categoryTable td:hover {
+  color: #f2f2f2;
+}
+
+#edit_imageGrid img {
+  transition: transform 0.3s ease-in-out;
+}
+
+#edit_imageGrid img:hover {
+  transform: scale(2.2);
+}/*# sourceMappingURL=addProduct.css.map */

@@ -1,3 +1,8 @@
+<?php
+include "session/SESSION_CLR.php";
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -24,6 +29,10 @@
     <link rel="stylesheet" href="./aeNav.css?
     <?php echo filemtime("aeNav.css"); ?>
     " />
+    <link rel="stylesheet" href="./aeC.css?
+    <?php echo filemtime("aeC.css"); ?>
+    " />
+
 
     <link
       rel="stylesheet"
@@ -42,6 +51,7 @@ include "aeNav.php";
 include "aeT.php";
 include "aeM.php";
 include "aeS.php";
+include "aeC.php";
 ?>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
@@ -65,5 +75,7 @@ include "aeS.php";
 
     <script src="ae.js?version=<?php echo filemtime('ae.js'); ?>"></script>
     <script src="carousel.js?version=<?php echo filemtime('carousel.js'); ?>"></script>
+    <script src="session/SESSION_CLR.js?version=<?php echo filemtime('session/SESSION_CLR.js'); ?>"></script>
+    <script src="productDetails.js?version=<?php echo filemtime('productDetails.js'); ?>"></script>
   </body>
 </html>

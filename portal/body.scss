@@ -1,0 +1,85 @@
+// Define color variables for background
+$html-bg-color: #843971; // Change this to your desired HTML background color
+$body-bg-color: #843971; // Change this to your desired body background color
+
+html {
+  background-color: $html-bg-color;
+}
+
+body {
+  background-color: $body-bg-color;
+}
+
+
+
+
+
+// Define primary color
+$primary-color: #843971;
+
+// Base container styles
+.col-lg-6,
+.col-md-12 {
+ // background-color: lighten($primary-color, 20%);
+  border-radius: 8px;
+  padding: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  // Nested card styles
+  .card {
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    // Card Header
+    .card-header {
+      background-color: $primary-color;
+      color: white;
+      font-weight: bold;
+    }
+
+    // Card Body
+    .card-body {
+
+
+      // Nested Card
+      .card {
+        margin-top: 1em;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        // Nested Card Header
+        .card-header {
+          background-color: darken($primary-color, 10%);
+          color: white;
+          font-weight: bold;
+        }
+
+        // Nested Card Body
+        .card-body {
+        //  background-color: lighten($primary-color, 40%);
+          color: darken($primary-color, 10%);
+
+          ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+              padding: 0.5em 0;
+              border-bottom: 1px solid darken($primary-color, 5%);
+              font-weight: bold;
+              
+              color: #843971;
+              
+              strong {
+                color: darken($primary-color, 20%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

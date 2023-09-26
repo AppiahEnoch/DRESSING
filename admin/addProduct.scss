@@ -1,0 +1,113 @@
+#addProduct {
+
+    .custom-form {
+        max-width: 30rem;
+        
+        border: 1px solid #ddd;
+        padding: 1rem;
+        margin: auto;
+        margin-bottom: 1rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 0.5rem;
+        color: #ddd;
+    }
+    
+    @media (max-width: 576px) {
+        .custom-form {
+            width: calc(100% - 2rem);
+        }
+    }
+    
+      
+      input[type],
+      input[type="file"],
+      textarea,
+      select {
+        &:hover, &:focus {
+      
+          outline: none !important;
+          box-shadow: none !important;
+        }
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #imageGrid {
+      .col-3 {
+        position: relative;
+  
+        .close-icon {
+          top: 5px;
+          right: 5px;
+          font-size: 20px;
+          cursor: pointer;
+          z-index: 10; // To ensure the icon stays on top
+          transition: transform 0.3s ease;
+  
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+  
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  
+
+  #price{
+
+    .custom-form {
+        max-width: 20rem;
+       
+    }
+  }
+
+
+
+
+  
+  #categoryTable {
+    // Remove outer border of the table
+    border-collapse: collapse;
+    border: none;
+  
+    th, td {
+      // Remove cell borders
+      border: none;
+    }
+
+    td {
+        // ... (other styles)
+        color: #f2f2f2;
+    
+        &:hover {
+          color: #f2f2f2; // To ensure the text color stays the same on hover
+        }
+      }
+  }
+  
+
+  #edit_imageGrid img {
+    transition: transform .3s ease-in-out;
+  }
+  
+  #edit_imageGrid img:hover {
+    transform: scale(2.2);
+  }
+  

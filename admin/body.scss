@@ -1,0 +1,12 @@
+// Define color variables for background
+$html-bg-color: #843971; // Change this to your desired HTML background color
+$body-bg-color: #843971; // Change this to your desired body background color
+
+html {
+  background-color: $html-bg-color;
+}
+
+body {
+  background-color: $body-bg-color;
+}
+

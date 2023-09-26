@@ -18,8 +18,10 @@ $user = $result->fetch_assoc();
 if ($user && password_verify($password, $user['password'])) {
     $_SESSION['user_id'] = $user['id'];
     $_SESSION['user_level'] = $user['userlevel'];
-    echo json_encode(['success' => 'Login successful']);
+
+    echo $_SESSION['user_level'];
+
 } else {
-    echo json_encode(['error' => 'Invalid username or password']);
+    echo 0;
 }
 ?>

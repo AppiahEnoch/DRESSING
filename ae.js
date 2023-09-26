@@ -472,7 +472,8 @@ function showWrapper3(idToShow, prefix, count) {
   });
 }
 
-function showToastYN(toastID, title, message, positionInPercentage) {
+// Update showToastYN function to include the page reload functionality
+function showToastR(toastID, title, message, positionInPercentage) {
   var toast = document.getElementById(toastID);
 
   // Change title of the toast
@@ -496,9 +497,20 @@ function showToastYN(toastID, title, message, positionInPercentage) {
   toast.style.transform = "translate(-50%, -50%)";
   toast.style.zIndex = "99999";
 
-  var bsToast = new bootstrap.Toast(toast);
+  var bsToast = new bootstrap.Toast(toast, {
+    autohide: false,
+    animation: true
+  });
+
+  // Assign function to execute on 'hidden.bs.toast' event
+  $(toast).on('hidden.bs.toast', function() {
+    location.reload();
+  });
+
   bsToast.show();
 }
+
+
 
 function closeToast(toastID) {
   var toastElement = document.getElementById(toastID);

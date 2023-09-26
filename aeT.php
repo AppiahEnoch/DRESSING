@@ -71,29 +71,24 @@
 
 
 
+    <div id="aeToastR" class="toast" role="alert" aria-live="assertive" aria-atomic="true" name="aeToastYN">
+  <div class="toast-header bg-danger text-white" name="toastHeader">
+    <i style="color: white;" class="fa fa-question-circle m-1" aria-hidden="true"></i>
+    <strong class="me-auto" name="toastTitle">Confirm Delete Action!</strong>
+    <small name="toastSmall">Confirm!</small>
+    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close" id="toastCloseBtn"></button>
+  </div>
+  <div class="toast-body" name="toastBody">
+    <p id="toastMessage" name="toastMessage"></p>
+    <div class="row row-cols-2" name="buttonRow"></div>
+      <div class="col text-end" id="yesBtnCol">
+        <button type="button" data-bs-dismiss="toast" class="btn btn-success btn-sm me-2" id="yesBtn" name="yesBtn">Close <i class="fa fa-thumbs-up" aria-hidden="true"></i></button>
+      </div>
     
-<div id="aeToastYN" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-  <div class="toast-header bg-danger text-white">
+    </div>
+  </div>
+</div>
 
-      <i style="color: white;" class="fa fa-question-circle m-1" aria-hidden="true"></i>
-      <strong class="me-auto">Confirm Delete Action!</strong>
-      <small>Confirm!</small>
-      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-  </div>
-  <div class="toast-body">
-      <p id="toastMessage"></p>
-<div class="row row-cols-2 ">
-  <div class="col text-end">
-    <button type="button" class="btn btn-success btn-sm me-2" onclick="handleYesClick()">Yes   <i class="fa fa-thumbs-up" aria-hidden="true"></i></button>
-  
-  </div>
-  <div class="col">
-    <button type="button" class="btn btn-danger btn-sm" onclick="handleNoClick()">No <i class="fa fa-thumbs-down" aria-hidden="true"></i> </button>
-  </div>
- 
-</div>
-  </div>
-</div>
 
 
 <div id="aeToastYN1" class="toast" role="alert" aria-live="assertive" aria-atomic="true">

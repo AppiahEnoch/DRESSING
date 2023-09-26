@@ -1,0 +1,60 @@
+html {
+  background-color: #843971;
+}
+
+body {
+  background-color: #843971;
+}
+
+.col-lg-6,
+.col-md-12 {
+  border-radius: 8px;
+  padding: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.col-lg-6 .card,
+.col-md-12 .card {
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.col-lg-6 .card .card-header,
+.col-md-12 .card .card-header {
+  background-color: #843971;
+  color: white;
+  font-weight: bold;
+}
+.col-lg-6 .card .card-body .card,
+.col-md-12 .card .card-body .card {
+  margin-top: 1em;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.col-lg-6 .card .card-body .card .card-header,
+.col-md-12 .card .card-body .card .card-header {
+  background-color: #602a53;
+  color: white;
+  font-weight: bold;
+}
+.col-lg-6 .card .card-body .card .card-body,
+.col-md-12 .card .card-body .card .card-body {
+  color: #602a53;
+}
+.col-lg-6 .card .card-body .card .card-body ul,
+.col-md-12 .card .card-body .card .card-body ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.col-lg-6 .card .card-body .card .card-body ul li,
+.col-md-12 .card .card-body .card .card-body ul li {
+  padding: 0.5em 0;
+  border-bottom: 1px solid #723162;
+  font-weight: bold;
+  color: #843971;
+}
+.col-lg-6 .card .card-body .card .card-body ul li strong,
+.col-md-12 .card .card-body .card .card-body ul li strong {
+  color: #3d1a34;
+}/*# sourceMappingURL=body.css.map */
