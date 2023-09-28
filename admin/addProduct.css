@@ -26,7 +26,7 @@
 #addProduct #imageGrid .col-3 {
   position: relative;
 }
-#addProduct #imageGrid .col-3 .close-icon {
+#addProduct #imageGrid .col-3 .close-icon, #addProduct #imageGrid .col-3 .close-icon1 {
   top: 5px;
   right: 5px;
   font-size: 20px;
@@ -34,7 +34,7 @@
   z-index: 10;
   transition: transform 0.3s ease;
 }
-#addProduct #imageGrid .col-3 .close-icon:hover {
+#addProduct #imageGrid .col-3 .close-icon:hover, #addProduct #imageGrid .col-3 .close-icon1:hover {
   transform: scale(1.2);
 }
 #addProduct #imageGrid .col-3 img {

@@ -29,9 +29,11 @@
         </div>
       </div>
       <div class="col-12">
-        <input type="search" class="form-control" id="searchBox" placeholder="Search">
+        <input type="search" class="form-control" id="searchBox" placeholder="Search by name, price, size, category">
       </div>
     </div>
   
   </div>
 </nav>
+
+

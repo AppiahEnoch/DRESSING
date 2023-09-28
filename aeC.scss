@@ -4,6 +4,9 @@ $card-height: 25rem;
 $image-height: 18.75rem;
 $image-width: 100%;
 
+$maxheight: 18.7rem;
+$maxWidth: 25rem;
+
 #wrapper1 {
   .row {
     .col-12 {
@@ -29,6 +32,9 @@ $image-width: 100%;
         height: $image-height;
         width: $image-width;
         object-fit: cover; // Makes sure the image covers the entire element, cropping if necessary
+   
+  
+     
       }
 
       // Card body

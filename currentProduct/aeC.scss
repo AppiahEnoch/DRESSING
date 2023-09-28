@@ -1,0 +1,212 @@
+// Define some color variables
+$primary-color: #646464;  // A shade of purple-blue
+$secondary-color: #FFD740;  // A shade of gold
+$text-dark: #333333;  // Dark gray for text
+ // Light gray for text
+$card-bg-color: #FAFAFA;  // Lighter gray for the card background
+$secondary-color:#f3d773;  // Example color for secondary elements
+$text-light: #b0b0b0;  
+$primary-hover-color: darken($secondary-color, 10%);  // A darker shade of gold for primary button hover
+$secondary-hover-color: darken($text-light, 10%);  // A darker shade for secondary button hover
+
+.cartCard {
+
+  .card {
+
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  // Adds a soft shadow
+    background-color: $card-bg-color;
+
+    .card-header {
+      background-color: $primary-color;
+      color: $secondary-color;
+
+      .remove-item {
+        color: $text-light;
+        transition: transform 0.3s ease;  
+        i.fas.fa-trash-alt {
+          margin-right: 5px;
+          color: $secondary-color;
+        }
+
+        &:hover {
+            color: $secondary-color;
+            text-decoration: underline; // You can add an underline on hover
+            cursor: pointer; // Changes the cursor to a hand pointer
+            transform: scale(1.1);
+          }
+      }
+    }
+
+    .card-body {
+      color: $text-dark;
+
+      img {
+        border-radius: 10px;  // Rounded corners for images
+      }
+
+      button {
+        padding: 4px 12px;
+        border-radius: 4px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+
+        &:hover {
+      
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  // Adds a soft shadow on hover
+          &.btn-primary {
+            background-color: $primary-hover-color;
+          }
+  
+          &.btn-secondary {
+            background-color: $secondary-hover-color;
+          }
+      
+        }
+
+        &.btn-primary {
+          background-color: $secondary-color;
+          color: $text-dark;
+        }
+
+        &.btn-secondary {
+          background-color: $text-light;
+          color: $text-dark;
+        }
+      }
+    }
+  }
+}
+
+
+$offcanvas-bg-color: #6b2d62;
+$offcanvas-header-bg-color: #843971;
+$offcanvas-header-text-color: #ffffff;
+
+
+.offcanvas {
+  z-index: 1050; // Increase the z-index to be higher than the navbar
+  background-color: $offcanvas-bg-color; // Set the offcanvas background color
+  
+  .offcanvas-header {
+    background-color: $offcanvas-header-bg-color;
+    color: $offcanvas-header-text-color;
+    margin-bottom: 5rem; // Default for mobile
+    
+    // Large screen
+    @media (min-width: 992px) { // You can adjust this breakpoint as needed
+      margin-bottom: 0rem;
+    }
+  }
+  
+}
+
+
+
+// Define color variables
+$primary-bg-color: #f9f9f9;  // Example background color
+$primary-text-color: #333;  // Example text color
+$success-color: #28a745;  // Example success color
+$lighter-success-color: lighten($success-color, 10%);  // Lightened success color
+$primary-border-color: #ddd; // Example border color
+
+
+.payment-container {
+    background-color: $primary-bg-color;
+    border: 1px solid $primary-border-color;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;  // Added this line
+    bottom: 0;  // Added this line
+  max-width: 23rem; // Added this line
+    z-index: 9999;  // Added this line, optional but useful to keep it above other content
+  left: 50%;
+    h5 {
+      color: $primary-text-color;
+      font-weight: 600;
+    }
+  
+    p {
+      color: $primary-text-color;
+      font-size: 1.5em;
+      margin-top: -10px;
+    }
+  
+    #makePayment {
+      background-color: $success-color;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-size: 1.2em;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: $lighter-success-color;
+        cursor: pointer;
+      }
+    }
+
+
+
+
+    @media (max-width: 575.98px) {
+        position: fixed;
+        top: 4rem;
+        left: 0;
+        width: auto; // Auto-adjust to content or specify a fixed small width
+        height: auto; // Auto-adjust to content or specify a fixed small height
+        padding: 10px; // Reduced padding
+        margin: 0; // No margin
+        border-radius: 0; // No rounded corners
+        background-color: rgba(255, 255, 255, 0.7); // 70% opacity
+        max-width: 20rem;
+        max-height: 5rem;
+        z-index: 9999;
+        
+        h5, p {
+          font-size: 1em; // Smaller text
+        }
+      
+        #makePayment {
+          padding: 5px; // Smaller padding
+          font-size: 1em; // Smaller font size
+        }
+      }
+      
+
+
+
+  }
+  
+  
+
+
+
+  .fixed-container{
+    position: fixed; // Fixed positioning
+    top: 1rem; // 1rem from the top
+    right: 1rem; // 1rem from the right
+    z-index: 9999; // High z-index to ensure it appears above other elements
+  
+    button #viewCartBtn1 {
+  
+      background-color: #fff; // White background
+      border: 1px solid #ccc; // Light gray border
+      color: #333; // Dark gray text
+      padding: 0.5rem 1rem; // Padding
+      font-size: 1rem; // Font size
+      transition: all 0.3s ease-in-out; // Smooth transition for hover state
+  
+      i.fas.fa-shopping-cart {
+        margin-right: 0.5rem; // Space between the icon and text
+      }
+  
+      &:hover {
+        background-color: #eee; // Slightly darker background on hover
+        border: 1px solid #bbb; // Darker border on hover
+      }
+    }
+  }
+  

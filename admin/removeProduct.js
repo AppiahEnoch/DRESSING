@@ -106,6 +106,7 @@ function displayImages(files) {
 
 // Adding event listeners for delete and update on images
 $(document).on("click", ".close-icon", function() {
+  
     const filePath = $(this).siblings("img").attr("src");
     const elementToRemove = $(this).parent();
 
@@ -212,6 +213,7 @@ $(document).ready(function() {
 });
 
 function addNewImageToGrid(file) {
+    
     const imageElement = `
         <div class="col-3 position-relative">
             <img src="${file}" alt="Uploaded Image" class="img-thumbnail">

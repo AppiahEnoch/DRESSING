@@ -17,7 +17,7 @@ $(document).ready(function() {
                 const imageElement = `
                     <div class="col-3 position-relative" data-filename="${file.name}">
                         <img src="${e.target.result}" alt="Uploaded Image" class="img-thumbnail">
-                        <i class="fas fa-times-circle position-absolute top-0 end-0 text-danger cursor-pointer close-icon"></i>
+                        <i class="fas fa-times-circle position-absolute top-0 end-0 text-danger cursor-pointer close-icon1"></i>
                     </div>`;
                 $('#imageGrid').append(imageElement);
             };
@@ -25,7 +25,7 @@ $(document).ready(function() {
         }
     });
     
-    $('#imageGrid').on('click', '.close-icon', function() {
+    $('#imageGrid').on('click', '.close-icon1', function() {
         const parentDiv = $(this).closest('.col-3');
         const fileName = parentDiv.attr('data-filename');
         parentDiv.remove();

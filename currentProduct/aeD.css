@@ -1,0 +1,206 @@
+#productContainer .product-images {
+  display: flex;
+  flex-direction: column;
+}
+#productContainer .product-images .large-image {
+  flex: 1;
+}
+#productContainer .product-images .large-image img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#productContainer .product-images .small-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  gap: 8px;
+}
+#productContainer .product-images .small-images img {
+  cursor: pointer;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#productContainer .product-images .small-images img:hover {
+  border: 2px solid blue;
+}
+
+#imageCard {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+}
+#imageCard .small-images {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px;
+  gap: 10px;
+}
+#imageCard .small-images img {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+#imageCard .small-images img:hover {
+  transform: scale(1.1);
+}
+#imageCard .large-image img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#productDetails {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ad4096;
+  padding: 20px;
+  color: #E8D28A;
+}
+#productDetails h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+#productDetails section {
+  margin-bottom: 20px;
+}
+#productDetails section:last-child {
+  margin-bottom: 0;
+}
+#productDetails .color-options, #productDetails .size-options, #productDetails .payment-options {
+  display: flex;
+  gap: 10px;
+}
+#productDetails .color-options button, #productDetails .size-options button, #productDetails .payment-options button {
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: box-shadow 0.3s ease;
+}
+#productDetails .color-options button:hover, #productDetails .size-options button:hover, #productDetails .payment-options button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#productDetails .description-price p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.size-options .form-group {
+  margin-top: 1rem;
+}
+.size-options .form-group h3 {
+  font-size: 1.5rem;
+}
+.size-options .form-group .form-select {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+.size-options .form-group .form-select:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+#color-options-section h3 {
+  font-size: 1.5rem;
+}
+#color-options-section #color-form-group {
+  margin-top: 1rem;
+}
+#color-options-section #color-form-group #colorSelect {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+#color-options-section #color-form-group #colorSelect:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-custom {
+  background-color: #4f2243;
+  border: none;
+  color: #fff;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.btn-custom:hover {
+  background-color: #242018;
+  color: #f2f2f2;
+}
+.btn-custom:focus, .btn-custom:active {
+  background-color: #3d1a34;
+  border: 1px solid #3d1a34;
+  outline: none;
+  box-shadow: 0 0 5px rgba(61, 26, 52, 0.5);
+}
+.btn-custom:disabled {
+  background-color: #2b1325;
+  cursor: not-allowed;
+}
+
+#collapsibleCard {
+  background-color: #a8488f;
+  border: 1px solid #843971;
+  color: #faf5f9;
+}
+#collapsibleCard .card-header {
+  background-color: #964180;
+}
+#collapsibleCard #collapsibleCardHeader a {
+  color: #f2f2f2;
+}
+#collapsibleCard #collapsibleCardHeader a:hover {
+  color: #242018;
+}
+#collapsibleCard #collapsibleCardBody form #emailDiv label,
+#collapsibleCard #collapsibleCardBody form #messageDiv label {
+  color: #190b16;
+}
+#collapsibleCard #collapsibleCardBody form #emailDiv input:focus,
+#collapsibleCard #collapsibleCardBody form #emailDiv textarea:focus,
+#collapsibleCard #collapsibleCardBody form #messageDiv input:focus,
+#collapsibleCard #collapsibleCardBody form #messageDiv textarea:focus {
+  border-color: #3d1a34;
+  box-shadow: 0 0 5px rgba(61, 26, 52, 0.5);
+}
+#collapsibleCard #collapsibleCardBody #sendButtonDiv #sendButton {
+  background-color: #4f2243;
+  color: #c578b1;
+}
+#collapsibleCard #collapsibleCardBody #sendButtonDiv #sendButton:hover {
+  background-color: #242018;
+}
+
+.washing-instructions .card {
+  background-color: #a8488f;
+  border: 1px solid #843971;
+  color: #faf5f9;
+}
+.washing-instructions .card .card-header {
+  background-color: #964180;
+}
+.washing-instructions .card .card-header h3 a {
+  color: #f2f2f2;
+}
+.washing-instructions .card .card-header h3 a:hover {
+  color: #242018;
+}
+.washing-instructions .card .card-body p {
+  color: black;
+  font-weight: bolder;
+}/*# sourceMappingURL=aeD.css.map */

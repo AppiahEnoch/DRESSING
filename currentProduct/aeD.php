@@ -1,15 +1,18 @@
+
+
+
 <div id="productContainer" class="container-fluid">
   <div class="row gap-5">
     <!-- Left side for displaying cloth images -->
     <div id="imageCard" class="col-md-6 product-images border">
     <div class="small-images">
-        <img src="productimage/1.jpg" alt="Cloth Image 1" onclick="showImage('productimage/1.jpg')">
-        <img src="productimage/2.jpg" alt="Cloth Image 2" onclick="showImage('productimage/2.jpg')">
+        <img src="../productimage/1.jpg" alt="Cloth Image 1" onclick="showImage('productimage/1.jpg')">
+        <img src="../productimage/2.jpg" alt="Cloth Image 2" onclick="showImage('productimage/2.jpg')">
 
         <!-- More images can be added -->
       </div>
       <div class="large-image">
-        <img id="largeImage" src="productimage/1.jpg" alt="Cloth Image">
+        <img id="largeImage" src="../productimage/1.jpg" alt="Cloth Image">
       </div>
 
     </div>
@@ -29,10 +32,7 @@
      <h3 class="" id="color-heading">Color</h3>
     <select class="form-select" id="colorSelect">
       <option selected>Choose Color</option>
-      <option value="Red">Red</option>
-      <option value="Blue">Blue</option>
-      <option value="Green">Green</option>
-      <option value="Yellow">Yellow</option>
+
     </select>
   </div>
 
@@ -47,20 +47,40 @@
   <h3>Size</h3>
     <select class="form-select" id="sizeSelect">
       <option selected>Choose Size</option>
-      <option value="1-2years">1-2years</option>
-      <option value="2-3years">2-3years</option> 
-      <option value="3-4years">3-4years</option>  
-      <option value="5-6years">5-6years</option> 
+
     </select>
   </div>
 </section>
 
-
-
-   
-
       <!-- Add to Cart Button -->
-      <button class="btn btn-custom add-to-cart w-100">Add to Cart</button>
+<button class="btn btn-custom add-to-cart w-100" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="shoppingCart">Add to Cart</button>
+<!-- Offcanvas Shopping Cart -->
+<div class="offcanvas offcanvas-start" data-bs-scroll="false" tabindex="-1" id="shoppingCart" aria-labelledby="shoppingCartLabel">
+  <div class="offcanvas-header">
+  <div class="row">
+  <button class="btn btn-danger sm" id="clearCart">
+    <i class="fas fa-trash-alt"></i> Clear Shopping Cart
+  </button>
+</div>
+
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+
+  <div class="offcanvas-body">
+
+  <?php
+  include "./aeC.php";
+  ?>
+
+  
+
+  </div>
+</div>
+
+
+
+
+
 
 
 <section class="washing-instructions m-3">
@@ -103,7 +123,8 @@
                         <form id="collapsibleContactForm" action="#" method="post">
                             <div class="mb-3" id="emailDiv">
                                 <label for="collapsibleContactForm_email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="collapsibleContactForm_email" name="collapsibleContactForm_email" required>
+                                <input type="email" class="form-control" id="collapsibleContactForm_email" name="collapsibleContactForm_email" placeholder="example@gmail.com" required>
+
                             </div>
                             <div class="mb-3" id="messageDiv">
                                 <label for="collapsibleContactForm_message" class="form-label">Message</label>

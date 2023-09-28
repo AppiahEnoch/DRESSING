@@ -11,6 +11,9 @@ $dropdown-hover-bg-color: #0F5132;
 
 // SCSS for the new Navbar
 .navbar {
+  position: sticky;  // Keeps the navbar sticky at the top
+  top: 0;  // Specifies the distance from the top edge of the viewport
+  z-index: 10;  // To make sure the navbar appears above all other elements on the page
   background-color: $navbar-bg-color;
 
   .navbar-toggler {
@@ -26,18 +29,13 @@ $dropdown-hover-bg-color: #0F5132;
   .container-fluid {
     background-color: $header-bg-color;
    
-
     a {
       color: $nav-link-color;
     }
   }
 
   .navbar-nav {
- 
-
     .nav-item {
-
-       
       a {
         color: $nav-link-color;
         
@@ -54,10 +52,7 @@ $dropdown-hover-bg-color: #0F5132;
 
   @media (max-width: 575.98px) {
     .navbar-nav {
-       
-
       text-align: center;
-      
     }
 
     .search-box {
@@ -67,3 +62,6 @@ $dropdown-hover-bg-color: #0F5132;
     }
   }
 }
+
+
+
