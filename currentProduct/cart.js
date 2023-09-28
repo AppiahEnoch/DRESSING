@@ -1,11 +1,5 @@
 
-
-
-
-
-
 var changedItems = [];
-
 function loadCartItems() {
   $.ajax({
     type: "post",
@@ -98,21 +92,6 @@ $(`#decrease${index}`).on("click", function() {
   updateChangedItems(productId, newQuantity);
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         });
 
         updateTotalSummary()
@@ -124,10 +103,6 @@ $(`#decrease${index}`).on("click", function() {
       showToast("aeToastE", "Error", error, "20");
     }, 
   });
-
-
-
-
 
 }
 
@@ -171,14 +146,6 @@ function updateChangedItems(productId, newQuantity) {
 }
 
 
-
-
-
-
-
-
-
-
 function removeItem(productId) {
 
   alert(productId);
@@ -203,14 +170,6 @@ function removeItem(productId) {
 
 
 }
-
-
-
-
-
-
-
-
 
 $('#shoppingCart').on('show.bs.offcanvas', function () {
   $("#wrapper1").removeClass("d-none");
@@ -306,9 +265,6 @@ $(document).ready(function () {
       "Are you sure you want to make payment?", 
       "20", 
       function() {
-
-     
-
         // Yes option clicked
         $.ajax({
           type: "post",
