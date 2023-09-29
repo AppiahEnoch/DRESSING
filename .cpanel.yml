@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - composer validate --no-check-all --strict
+    - composer install --no-dev

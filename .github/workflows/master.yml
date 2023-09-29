@@ -12,6 +12,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ftp.thedressing.shop
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
+        username: thedressing
+        password: SecurePass2023@789
    
