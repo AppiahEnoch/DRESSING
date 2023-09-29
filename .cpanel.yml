@@ -1,5 +1,7 @@
 ---
 deployment:
   tasks:
-    - composer validate --no-check-all --strict
+    - export DEPLOYPATH=/home/AECleanCodes/public_html/DRESSING/
+    - /bin/cp -R * $DEPLOYPATH
+    - cd $DEPLOYPATH
     - composer install --no-dev
