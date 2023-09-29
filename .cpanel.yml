@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/AECleanCodes/public_html/DRESSING/
+    - export DEPLOYPATH=/home/AECleanCodes/public_html/
     - /bin/cp -R * $DEPLOYPATH
     - cd $DEPLOYPATH
     - composer install --no-dev
