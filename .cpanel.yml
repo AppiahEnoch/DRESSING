@@ -4,5 +4,7 @@ deployment:
     - export DEPLOYPATH=/home/public_html/
     - /bin/cp -R * $DEPLOYPATH
     - cd $DEPLOYPATH
+    - composer validate --no-check-all --strict
     - composer install --no-dev
+    
 
