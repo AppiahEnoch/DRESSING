@@ -1,7 +1,8 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/AECleanCodes/public_html/
+    - export DEPLOYPATH=/home/public_html/
     - /bin/cp -R * $DEPLOYPATH
     - cd $DEPLOYPATH
+    - composer install --no-dev
 
