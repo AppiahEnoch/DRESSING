@@ -12,6 +12,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ftp.thedressing.shop
-        username: thedressing
-        password: SecurePass2023@789
+        username: a@thedressing.shop
+        password: AEcleanCodes123q_3_sX@@2mL_
    
