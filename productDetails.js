@@ -6,10 +6,10 @@
     $.ajax({
       type: "get",
       url: "getProducts.php",
-      dataType: "text",
+      dataType: "json",
       success: function (data, status) {
 
-        alert(data)
+       // alert(data)
         let html = '<div class="container-fluid justify-content-center align-items-center d-flex mt-5" id="wrapper1" name="wrapper1">';
         let navbarHtml = '';
   
